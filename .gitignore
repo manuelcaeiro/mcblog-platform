@@ -1,0 +1,7 @@
+*.pyc
+*~
+__pycache__
+venv
+mcblogdb.sqlite3
+/static
+.DS_Store
