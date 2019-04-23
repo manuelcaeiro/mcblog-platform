@@ -1,6 +1,7 @@
 *.pyc
 *~
 __pycache__
+local_settings.py
 venv
 mcblogdb.sqlite3
 /static

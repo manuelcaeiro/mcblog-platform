@@ -24,8 +24,12 @@ import os
 SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', '6l9=yb0rbnlhl10n&qk(zc4v1a6lto8&%o0u_ou5hw8eklw+3*')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-#DEBUG = True
-#DJANGO_DEBUG=False
+### After you deploy mcblog to a public server (as pythonanywhere)
+### uncomment DEBUG=False and comment the DEBUG=os.(...) line
+#DEBUG = False
+
+### or just uncomment DJANGO_DEBUG=False (nothing else)
+#DJANGO_DEBUG = False
 DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
 
 
@@ -79,18 +83,29 @@ LOGIN_REDIRECT_URL = '/'
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
+### This is the dafault database you want to use in your computer to
+### test mcblog with your localhost server (127.0.0.1:8000)
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'mcblogdb.sqlite3'),
-#        'ENGINE': 'django.db.backends.postgresql',
-#        'NAME': 'mcblogdb',
-#        'USER': 'mc',
-#        'PASSWORD': '',
-#        'HOST': 'localhost',
-#        'PORT': '',
     }
 }
+
+### This is the database config you should use if you want to deploy
+### mcblog on pythonanywhere (or other public server that uses MySQL)
+### to put it online. Just comment the previous code and uncomment the
+### one bellow, and change the lines inside <> with your specifications.
+### See more: https://help.pythonanywhere.com/pages/UsingMySQL/
+#DATABASES = {
+    #'default': {
+        #'ENGINE': 'django.db.backends.mysql',
+        #'NAME': '<your_username>$<your_database_name>',
+        #'USER': '<your_username>',
+        #'PASSWORD': '<your_mysql_password>',
+        #'HOST': '<your_mysql_hostname>',
+    #}
+#}
 
 # Password validation
 # https://docs.djangoproject.com/en/2.1/ref/settings/#auth-password-validators
