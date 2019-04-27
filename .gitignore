@@ -3,6 +3,7 @@
 __pycache__
 local_settings.py
 venv
+work
 mcblogdb.sqlite3
 /static
 .DS_Store
