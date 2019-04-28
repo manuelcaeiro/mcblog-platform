@@ -41,7 +41,7 @@ h1, h2, h3, h4 {
 }
 
 .post-form textarea, .post-form input {
-    width: 80%;
+    width: 100%;
 }
 
 .top-menu, .top-menu:hover, .top-menu:visited {
@@ -63,6 +63,7 @@ h1, h2, h3, h4 {
 }
 
 .center-justified {
-	text-align-last: left;
+	text-align: justify;
+	/*text-align-last: left;*/
 	width: 80%;
 }

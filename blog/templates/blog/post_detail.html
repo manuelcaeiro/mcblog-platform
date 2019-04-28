@@ -39,7 +39,7 @@
 				{% endif %}
 			</div>
 			<strong>{{ comment.author }}</strong>
-			<p>{{ comment.text|safe|linebreaks }}</p>
+			<div class="center-justified">{{ comment.text|safe|linebreaks }}</div>
 		</div>
 		{% endif %}
 	{% empty %}

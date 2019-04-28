@@ -2,6 +2,7 @@
 *~
 __pycache__
 local_settings.py
+media
 venv
 work
 mcblogdb.sqlite3
