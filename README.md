@@ -20,7 +20,7 @@ If you intend to do only small changes on the template (HTML) and the static (CS
 
 Otherwise, if you know how to program in Python/Django and intend to change also some of the framework files, you will want to download the whole repository into your machine, edit the files to make the desired changes and then git-push them back to your repository.
 
-mcblog-platform code is open source and you are free to make the changes that you wish under the conditions of the MIT License. Please do not forget to mention the source copyright and read the License [here](https://github.com/manuelcaeiro/mcblog-platform/new/master?readme=1#license).
+mcblog-platform code is open source and you are free to make the changes that you wish under the conditions of the MIT License. Please do not forget to mention the source copyright and read the License [here](https://github.com/manuelcaeiro/mcblog-platform/tree/master#license).
 
 # Need help?
 If you like and want to use mcblog-platform but don't know how to deploy it in order to put it online, I may be able to do it for you. (Contact manuelcaeiro[at]workmail.com)
